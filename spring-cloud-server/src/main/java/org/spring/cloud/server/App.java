@@ -7,8 +7,8 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@EnableConfigServer
-@EnableEurekaServer
+@EnableConfigServer//@EnableConfigServer注解说明了一个Config Server。同样我们使用@EnableEurekaClient将它注册到服务中心。
+@EnableEurekaServer//注明是Eurake的服务端
 @SpringBootApplication
 @RestController
 public class App {
